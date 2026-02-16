@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayesh Kriplani | Software Development Engineer</title>
+    <meta name="description"
+        content="Portfolio of Jayesh Kriplani — Software Development Engineer at Flipkart with expertise in backend systems, microservices, and machine learning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">JK</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#accomplishments">Accomplishments</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Jayesh Kriplani</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">Software Development Engineer</span>
+                    <span class="hero-title-at">@</span>
+                    <span class="hero-title-company">Flipkart</span>
+                </div>
+                <p class="hero-tagline" id="hero-tagline"></p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="https://www.linkedin.com/in/jayesh-kriplani-29438a153/" target="_blank" rel="noopener"
+                        class="btn btn-outline">LinkedIn</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/jayeshkriplani" target="_blank" rel="noopener" aria-label="GitHub"
+                        class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jayesh-kriplani-29438a153/" target="_blank" rel="noopener"
+                        aria-label="LinkedIn" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://leetcode.com/u/jshkriplani/" target="_blank" rel="noopener" aria-label="LeetCode"
+                        class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:jayesh.kce17@gmail.com" aria-label="Email" class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-glow"></div>
+                <img src="profile.png" alt="Jayesh Kriplani" class="hero-image" id="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
+                <div class="about-text">
+                    <p>I'm a <strong>Software Development Engineer at Flipkart</strong>, India's leading e-commerce
+                        platform, where I optimize post-order processes and build resilient microservices that handle
+                        millions of transactions daily.</p>
+                    <p>With a strong foundation in <strong>Computer Science</strong> from Pandit Deendayal Petroleum
+                        University (GPA: 9.42/10), I bring expertise across backend systems, distributed computing, and
+                        machine learning.</p>
+                    <p>I'm passionate about solving complex engineering challenges — from reducing Elastic search load
+                        by <strong>80%</strong> to designing fault-tolerant return workflows that cut application
+                        latency by <strong>96%</strong>.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="3">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="9.42">0</span>
+                        <span class="stat-label">GPA / 10</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Awards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Work Experience</h2>
+            <div class="timeline">
+                <!-- Flipkart -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Software Development Engineer</h3>
+                                <p class="timeline-company">Flipkart</p>
+                            </div>
+                            <span class="timeline-date">Mar 2022 – Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Optimised Problem Management (Samasya) app by reducing almost <strong>80%</strong> load
+                                average of Elastic search from 5 to 1 through merging index and reduced almost
+                                <strong>96%</strong> application latency
+                            </li>
+                            <li>Implemented <strong>Inline-Id</strong> feature into complicated return workflow for
+                                agents to detect fraud customer</li>
+                            <li>Developed <strong>Recharges & Bill Payments</strong> feature on Flipkart app for ease of
+                                customer</li>
+                            <li>Onboarded new virtual-order workflow to create <strong>RCBP Incident</strong> and revamp
+                                return workflow</li>
+                            <li>Reduced error & bugs in complicated workflows (Return, Cancel Order etc.) of backend
+                                systems by <strong>20%</strong></li>
+                            <li>Created <strong>LogBox Container</strong> for transferring Kubernetes pod logs to LogBox
+                                VM</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Microservices</span>
+                            <span class="tag">Elasticsearch</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Netmeds -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Software Engineer</h3>
+                                <p class="timeline-company">Netmeds (Reliance Retail)</p>
+                            </div>
+                            <span class="timeline-date">Oct 2021 – Feb 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Implemented <strong>Super-Fast Moving</strong> products feature returning top 500 super
+                                fast products based on score</li>
+                            <li>Designed <strong>L1 & L2 Approval</strong> for particular SKUs called Inward-locking
+                                feature in Nuttycrunch project</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Backend</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TrinaryBits -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Backend Developer Intern</h3>
+                                <p class="timeline-company">TrinaryBits Tech. Pvt. Ltd.</p>
+                            </div>
+                            <span class="timeline-date">Jan 2021 – Jun 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed <strong>E-commerce web application</strong> for customers that permits
+                                merchants in developing counters to advertise and sell their products online</li>
+                            <li>Developed two interfaces for <strong>admin</strong> as well as <strong>customer</strong>
+                                with proper database and information</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDPU-IIC -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">Summer Intern</h3>
+                                <p class="timeline-company">PDPU — Innovation & Incubation Centre</p>
+                            </div>
+                            <span class="timeline-date">Jun 2020 – Sep 2020</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed an <strong>AI-Powered mass Surveillance System</strong> to monitor and maintain
+                                Social Distancing in Public Places, Offices, and Workplaces due to Covid-19</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card reveal">
+                    <div class="project-icon">🧠</div>
+                    <h3 class="project-title">Sentiment Analysis on Tweets</h3>
+                    <p class="project-description">Implemented different ML algorithms to classify tweet polarity. LSTM
+                        model achieved <strong>83%</strong> accuracy, CNN model achieved <strong>83.34%</strong>. Used
+                        ensemble method with majority vote achieving <strong>83.58%</strong> accuracy.</p>
+                    <div class="project-tech">
+                        <span class="tag">Python</span>
+                        <span class="tag">Google Colab</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">LSTM</span>
+                        <span class="tag">CNN</span>
+                    </div>
+                    <span class="project-date">June 2020</span>
+                </div>
+
+                <div class="project-card glass-card reveal">
+                    <div class="project-icon">🎮</div>
+                    <h3 class="project-title">Game Recommender for Steam</h3>
+                    <p class="project-description">Built 3 different recommender system algorithms — one content-based
+                        and two collaborative filtering (ALS, EM & SVD). Collected and processed user data with advanced
+                        data engineering and modeling.</p>
+                    <div class="project-tech">
+                        <span class="tag">Python</span>
+                        <span class="tag">Colab</span>
+                        <span class="tag">Collaborative Filtering</span>
+                        <span class="tag">ALS</span>
+                    </div>
+                    <span class="project-date">Nov 2020</span>
+                </div>
+
+                <div class="project-card glass-card reveal">
+                    <div class="project-icon">📊</div>
+                    <h3 class="project-title">EPCM Project Management</h3>
+                    <p class="project-description">Web-based interface for Dynamic Engineering, Execution Planning, and
+                        Monitoring for EPCM projects using dynamic scheduling. Eliminated static to-do lists for teams
+                        working individually.</p>
+                    <div class="project-tech">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <span class="project-date">Feb 2021</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-card reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">💻</span>
+                        Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-badge">C++</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">🛠️</span>
+                        Dev Tools & Platforms
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-badge">IntelliJ</span>
+                        <span class="skill-badge">SequelPro</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Jenkins</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">Postman</span>
+                        <span class="skill-badge">XAMPP</span>
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">AWS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal">
+                    <h3 class="skill-category-title">
+                        <span class="skill-icon">⚙️</span>
+                        Frameworks & Technologies
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-badge">Dropwizard</span>
+                        <span class="skill-badge">Spring Boot</span>
+                        <span class="skill-badge">JUnit Test</span>
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">Servlet</span>
+                        <span class="skill-badge">Keras</span>
+                        <span class="skill-badge">TensorFlow</span>
+                        <span class="skill-badge">Scikit-Learn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section class="section accomplishments" id="accomplishments">
+        <div class="container">
+            <h2 class="section-title reveal">Accomplishments</h2>
+            <div class="accomplishments-grid">
+                <div class="accomplishment-card glass-card reveal">
+                    <div class="accomplishment-icon">🏆</div>
+                    <h3>Best Prototype Award</h3>
+                    <p>Innovation and Incubation Centre, PDPU — Let's Hack 2.0 (Hackathon)</p>
+                </div>
+                <div class="accomplishment-card glass-card reveal">
+                    <div class="accomplishment-icon">🥇</div>
+                    <h3>Techgium 2019-20 Finalist</h3>
+                    <p>Secured Final Round (Top 200 Finalists) among <strong>22k+</strong> participants at LT Technology
+                        Services, Bangalore</p>
+                </div>
+                <div class="accomplishment-card glass-card reveal">
+                    <div class="accomplishment-icon">🥈</div>
+                    <h3>IICDC Semi-Finalist</h3>
+                    <p>Semi-Final Round (Top 510 teams) among <strong>75k+</strong> participants — Sponsored by Texas
+                        Instruments & MyGov</p>
+                </div>
+                <div class="accomplishment-card glass-card reveal">
+                    <div class="accomplishment-icon">🎓</div>
+                    <h3>Top 7 Merit Cum Scholarship</h3>
+                    <p>Awarded by University Every Year for academic excellence</p>
+                </div>
+                <div class="accomplishment-card glass-card reveal">
+                    <div class="accomplishment-icon">💼</div>
+                    <h3>Virtual Experience Programs</h3>
+                    <p>Completed Software Engineering programs at <strong>Goldman Sachs</strong> & <strong>JP Morgan
+                            Chase Co.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="education-card glass-card reveal">
+                <div class="education-icon">🎓</div>
+                <div class="education-details">
+                    <h3>Pandit Deendayal Petroleum University</h3>
+                    <p class="education-degree">B.Tech in Computer Science</p>
+                    <p class="education-meta">
+                        <span>GPA: <strong>9.42 / 10</strong></span>
+                        <span class="separator">•</span>
+                        <span>Aug 2017 – Jun 2021</span>
+                        <span class="separator">•</span>
+                        <span>Gandhinagar, Gujarat</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Let's Connect</h2>
+            <p class="contact-subtitle reveal">I'm always open to discussing new opportunities, tech, or interesting
+                projects.</p>
+            <div class="contact-grid reveal">
+                <a href="mailto:jayesh.kce17@gmail.com" class="contact-card glass-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">jayesh.kce17@gmail.com</span>
+                </a>
+                <a href="tel:+919974269964" class="contact-card glass-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">+91-9974269964</span>
+                </a>
+                <a href="https://www.linkedin.com/in/jayesh-kriplani-29438a153/" target="_blank" rel="noopener"
+                    class="contact-card glass-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">jayesh-kriplani</span>
+                </a>
+                <a href="https://github.com/jayeshkriplani" target="_blank" rel="noopener"
+                    class="contact-card glass-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">jayeshkriplani</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Jayesh Kriplani. Built with passion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
