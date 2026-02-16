@@ -517,6 +517,32 @@ strong {
     align-items: start;
 }
 
+.about-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-image-wrapper {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    transition: all var(--transition-base);
+}
+
+.about-image-wrapper:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-4px);
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .about-text p {
     color: var(--text-secondary);
     margin-bottom: 16px;
